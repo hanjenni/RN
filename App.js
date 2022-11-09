@@ -10,7 +10,7 @@ import {
   ScrollView,
   Text,
 } from "react-native";
-import { TouchableWithoutFeedback } from "react-native-web";
+import GoalItem from "./components/GoalItem";
 
 export default function App() {
   const [enteredGoalText, setEnteredGoalText] = useState("");
@@ -41,9 +41,11 @@ export default function App() {
       <View style={styles.goalsContainer}>
       <ScrollView alwaysBounceVertical={false}>
         {courseGoals.map((goal) => (
-          <View key={goal} style={styles.goalItems}>
-          <Text style={styles.goalText}>{goal}</Text>
-        </View>
+        //   <View key={goal} style={styles.goalItems}>
+        //   <Text style={styles.goalText}>{goal}</Text>
+        // </View>
+
+        <GoalItem goal={goal}/>
         ))}
       </ScrollView>
     </View>
@@ -83,14 +85,14 @@ const styles = StyleSheet.create({
     flex: 5,
   },
 
-  goalItems: {
-    margin: 8,
-    borderRadius: 6,
-    backgroundColor: "blue",
-    padding: 8,
-  },
+  // goalItems: {
+  //   margin: 8,
+  //   borderRadius: 6,
+  //   backgroundColor: "blue",
+  //   padding: 8,
+  // },
 
-  goalText: {
-    color: 'white',
-  }
+  // goalText: {
+  //   color: 'white',
+  // }
 });
