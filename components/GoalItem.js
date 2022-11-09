@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
     goalItems: {
         margin: 8,
         borderRadius: 6,
-        backgroundColor: "blue",
+        backgroundColor: "#CDA291",
         padding: 8,
       },
     
       goalText: {
-        color: 'white',
+        color: '#414271',
       }
 });

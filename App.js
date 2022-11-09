@@ -36,7 +36,7 @@ export default function App() {
           placeholder="your goals here"
           onChangeText={goalInputHandler}
         />
-        <Button title="add" onPress={addGoalHandler} />
+        <Button color='#A26952' title="ADD" onPress={addGoalHandler} />
       </View>
       <View style={styles.goalsContainer}>
       <ScrollView alwaysBounceVertical={false}>
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 50,
     paddingHorizontal: 16,
-    backgroundColor:'pink',
+    backgroundColor:'#402E32',
   },
 
   inputContainer: {
@@ -68,22 +68,25 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 24,
     borderBottomWidth: 1,
-    borderBottomColor: "blue",
+    borderBottomColor: "#A26952",
   },
 
   textInput: {
     borderWidth: 1,
-    borderColor: "blue",
+    borderColor: "#A26952",
     width: "85%",
     marginRight: 8,
     padding: 8,
     backgroundColor: 'white',
     borderRadius: 6,
+    color: '#402E32'
   },
 
   goalsContainer: {
     flex: 5,
   },
+
+
 
   // goalItems: {
   //   margin: 8,
